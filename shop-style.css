@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.shop-header-space { height: 0px; }
+
+.shop-page-title { text-align: center; margin: 4rem 0 2rem; color: var(--electric-blue); }
+.shop-page-title h1 { font-size: 3rem; color: #111; letter-spacing: 2px; }
+
+.cards-container.four-grid { grid-template-columns: repeat(4, 1fr); max-width: 1400px; padding: 0 2rem; }
+@media (max-width: 1200px) { .cards-container.four-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .cards-container.four-grid { grid-template-columns: 1fr; } }
+
+.best-badge {
+    position: absolute; top: 15px; left: 15px; background: #3DFA25; color: #000;
+    font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 0.7rem;
+    padding: 8px 16px; z-index: 4; letter-spacing: 1px;
+}
+
+.prod-features { font-size: 0.8rem; color: #666; margin: 0.8rem 0; line-height: 1.5; min-height: 40px; }
+.prod-price { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.2rem; color: #111; }
+.prod-desc-short { font-size: 0.85rem; font-weight: 500; color: #333; margin-bottom: 1rem; border-bottom: 1px dashed var(--border-thin); padding-bottom: 0.8rem; }
+
+.product-detail-wrapper { background: #111; color: #FFF; padding: 8rem 2rem; margin-top: 5rem; text-align: center; position: relative; overflow: hidden; }
+.detail-meta { color: #3DFA25; font-family: 'Orbitron', sans-serif; letter-spacing: 3px; font-size: 0.9rem; margin-bottom: 1rem; display: block; }
+.detail-title { font-size: 3.5rem; font-weight: 900; margin-bottom: 2rem; letter-spacing: -1px; }
+.detail-text { font-size: 1.2rem; font-weight: 300; line-height: 2; max-width: 600px; margin: 0 auto 3rem; color: #CCC; }
+.detail-text strong { color: #FFF; font-weight: 700; }
+
+.buy-now-btn {
+    display: inline-block; background: var(--electric-blue); color: #FFF;
+    font-family: 'Orbitron', 'Noto Sans KR', sans-serif; font-size: 1.1rem; font-weight: 700;
+    padding: 1.2rem 4rem; text-decoration: none; transition: all 0.3s ease;
+}
+.buy-now-btn:hover { background: #FFF; color: var(--electric-blue); }

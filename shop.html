@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN-SIDER Official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Noto+Sans+KR:wght@300;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light" class="page-transition">
+    <div class="cursor"></div>
+
+    <header class="top-bar">
+        <div class="header-left">
+            <button class="hamburger-btn" id="hamburgerBtn">
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="search-box">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" placeholder="SEARCH">
+            </div>
+        </div>
+        <div class="header-center">
+            <a href="index.html" class="logo transition-link">IN-SIDER</a>
+        </div>
+        <div class="header-right">
+            <div class="user-menu">
+                <button class="icon-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="user-dropdown">
+        <a href="#login">LOGIN / JOIN US</a>
+        <a href="#mypage">MYPAGE / CART</a>
+    </div>
+
+    <nav class="side-menu" id="sideMenu">
+        <div class="menu-inner">
+            <ul class="nav-links">
+                <li><a href="about.html" class="transition-link">ABOUT US</a></li>
+                <li><a href="shop.html" class="transition-link">SHOP</a></li>
+                <li><a href="support.html" class="transition-link">FAQ</a></li>
+                <li><a href="reviews.html" class="transition-link">REVIEWS</a></li>
+            </ul>
+
+            <div class="side-qr-section">
+                <div class="side-qr-box">
+                    <img src="main_img/QR.png" alt="IN-SIDER QR" class="side-qr-img">
+                </div>
+
+                <a href="https://www.instagram.com/in.siderclub" target="_blank" class="side-insta-link">
+                    <img src="main_img/instagram-logo.png" class="insta-logo-img">
+                    <span>@in.siderclub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="marquee sporty-blue">
+        <div class="marquee-content">
+            <span>/// OVERRIDE THE SYSTEM /// MAXIMIZE SOCIAL PERFORMANCE /// ZERO ERRORS ///</span>
+            <span>/// OVERRIDE THE SYSTEM /// MAXIMIZE SOCIAL PERFORMANCE /// ZERO ERRORS ///</span>
+        </div>
+    </div>
+
+    <div class="shop-header-space"></div>
+
+    <main class="shop-main">
+        <div class="shop-page-title">
+            <span class="tech-badge">SELECT YOUR NEW EGO</span>
+            <h1>SHOP</h1>
+        </div>
+
+        <section id="shop-cards">
+            <div class="cards-container three-grid">
+                
+                <div class="product-card">
+                    <div class="best-badge">[BEST]</div>
+                    <div class="card-img-box"><img src="shop_img/shop_glasses.png" alt="IN-Sider GLASS" onerror="this.src='https://via.placeholder.com/400x450/000/fff?text=GLASS'"></div>
+                    <div class="card-info">
+                        <div class="prod-meta">DEVICE_01</div>
+                        <div class="prod-name">IN-Sider GLASS</div>
+                        <div class="prod-features">카메라 + 시각화 + 오디오<br>패션 아이템으로도 손색없음.</div>
+                        <div class="prod-desc-short">가장 완전한 IN-Sider 경험.</div>
+                        <div class="prod-price">₩ 498,000</div>
+                        <div class="card-action">
+                            <a href="shop_glasses.html" class="view-btn transition-link">SEE MORE -></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-box"><img src="shop_img/shop_pods.png" alt="IN-Sider POD" onerror="this.src='https://via.placeholder.com/400x450/000/fff?text=POD'"></div>
+                    <div class="card-info">
+                        <div class="prod-meta">DEVICE_02</div>
+                        <div class="prod-name">IN-Sider PODS</div>
+                        <div class="prod-features">카메라 + 오디오<br>에어팟이랑 구별 안 됨.</div>
+                        <div class="prod-desc-short">귀에 꽂는 순간 대화의 주도권이 바뀜.</div>
+                        <div class="prod-price">₩ 189,000</div>
+                        <div class="card-action">
+                            <a href="shop_pods.html" class="view-btn transition-link">SEE MORE -></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-box"><img src="shop_img/shop_watch.png" alt="IN-Sider WATCH" onerror="this.src='https://via.placeholder.com/400x450/000/fff?text=WATCH'"></div>
+                    <div class="card-info">
+                        <div class="prod-meta">DEVICE_03</div>
+                        <div class="prod-name">IN-Sider WATCH</div>
+                        <div class="prod-features">카메라 + 텍스트<br>손목 위에서 조용히.</div>
+                        <div class="prod-desc-short">가장 티 안 나는 선택.</div>
+                        <div class="prod-price">₩ 279,000</div>
+                        <div class="card-action">
+                            <a href="shop_watch.html" class="view-btn transition-link">SEE MORE -></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <h2 class="footer-logo">IN-SIDER</h2>
+            <div class="footer-nav">
+                <a href="about.html" class="transition-link">ABOUT</a>
+                <a href="shop.html" class="transition-link">SHOP</a>
+                <a href="support.html" class="transition-link">SUPPORT</a>
+                <a href="reviews.html" class="transition-link">REVIEW</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <p>&copy; 2031 IN-Sider Inc.<br>Daejeon, Republic of Korea</p>
+                <div class="footer-legal">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+            <div class="footer-creepy">
+                지금 이 순간도 수집 중입니다.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="shop-script.js"></script>
+</body>
+</html>
