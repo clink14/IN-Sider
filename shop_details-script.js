@@ -1,26 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const qtyInput = document.getElementById('qtyInput');
-    const btnMinus = document.getElementById('btnMinus');
-    const btnPlus = document.getElementById('btnPlus');
-
-    if(btnMinus && btnPlus && qtyInput) {
-        btnMinus.addEventListener('click', () => {
-            let currentValue = parseInt(qtyInput.value);
-            if (currentValue > 1) {
-                qtyInput.value = currentValue - 1;
-            }
-        });
-
-        btnPlus.addEventListener('click', () => {
-            let currentValue = parseInt(qtyInput.value);
-            if (currentValue < 99) {
-                qtyInput.value = currentValue + 1;
-            }
-        });
-    }
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('galleryContainer');
     const slides = document.querySelectorAll('.gallery-slide');
@@ -53,5 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
             updateGallery(index);
         });
     });
+
+    const btnMinus = document.getElementById('btnMinus');
+    const btnPlus = document.getElementById('btnPlus');
+    const qtyInput = document.getElementById('qtyInput');
+
+    if (btnMinus && btnPlus && qtyInput) {
+        btnMinus.addEventListener('click', () => {
+            let currentValue = parseInt(qtyInput.value);
+            if (currentValue > 1) qtyInput.value = currentValue - 1;
+        });
+
+        btnPlus.addEventListener('click', () => {
+            let currentValue = parseInt(qtyInput.value);
+            if (currentValue < 99) qtyInput.value = currentValue + 1;
+        });
     }
 });
